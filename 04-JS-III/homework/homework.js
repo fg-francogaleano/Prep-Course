@@ -123,7 +123,8 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  if (arguments.length === 0) {
+  // !arguments es lo mismo que abajo
+  if (arguments.length === 0) { 
     return 0;
   }
   if (arguments.length === 1) {
@@ -168,7 +169,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var NumString = n.toString()
-  if (NumString[0] === '9') {
+  if (NumString[0] == 9) {
     return true;
   }
   return false;
@@ -179,12 +180,18 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
- for ( var i = 0; i < arreglo.length -1; i++) {
-  if ( arreglo[i] !== arreglo[i+1]) {
-    return false;
+//  for ( var i = 0; i < arreglo.length -1; i++) {
+  // if ( arreglo[i] !== arreglo[i+1]) {
+    // return false;
+  // }
+  // return true
+//  }
+for ( var i = 0; i < arreglo.lenght; i++) {
+  if (arreglo[0] !== arreglo[i]) {
+    return false
   }
-  return true
- }
+}
+return true
 } 
 
 
